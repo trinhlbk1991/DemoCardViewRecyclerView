@@ -4,4 +4,7 @@
     <string name="app_name">CardView RecyclerView</string>
     <string name="action_settings">Settings</string>
 
+    <string name="title_loading">Please Wait</string>
+    <string name="msg_loading">Loading movies list…</string>
+
 </resources>

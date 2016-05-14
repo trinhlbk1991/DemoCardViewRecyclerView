@@ -23,4 +23,9 @@ dependencies {
     compile 'com.android.support:appcompat-v7:23.3.0'
     compile 'com.android.support:cardview-v7:23.3.0'
     compile 'com.android.support:recyclerview-v7:23.3.0'
+
+    //GSON is open source Java library developed by Google.
+    // It is an API for converting a Java object to/from json representation.
+    compile 'com.google.code.gson:gson:2.4'
+
 }

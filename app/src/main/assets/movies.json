@@ -1,0 +1,30 @@
+[
+  {
+    "name": "The Amazing Spider-Man 2",
+    "image": "images/spiderman.jpeg"
+  },
+  {
+    "name": "X-men: Days of Future Past",
+    "image": "images/xmen.jpg"
+  },
+  {
+    "name": "The Hunger Game",
+    "image": "images/hungergame.jpg"
+  },
+  {
+    "name": "Guardians of the Galaxy",
+    "image": "images/guardians_of_the_galaxy.jpg"
+  },
+  {
+    "name": "Maleficent",
+    "image": "images/maleficent.jpg"
+  },
+  {
+    "name": "How to Train Your Dragon 2",
+    "image": "images/howtotrainyourdragon.jpg"
+  },
+  {
+    "name": "What If",
+    "image": "images/whatif.jpg"
+  }
+]

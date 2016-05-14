@@ -1,10 +1,12 @@
-package com.icetea09.demomaterialdesigncard;
+package com.icetea09.demomaterialdesigncard.adapter;
 
 import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.TextView;
+
+import com.icetea09.demomaterialdesigncard.R;
 
 import java.util.ArrayList;
 import java.util.List;

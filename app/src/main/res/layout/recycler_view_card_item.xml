@@ -1,34 +1,35 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:card_view="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content">
 
     <android.support.v7.widget.CardView
         android:layout_width="fill_parent"
         android:layout_height="wrap_content"
-        card_view:contentPadding="@dimen/activity_horizontal_margin"
-        card_view:cardCornerRadius="3dp">
+        android:layout_marginBottom="@dimen/activity_horizontal_margin"
+        card_view:cardCornerRadius="5dp">
+
         <ImageView
             android:id="@+id/img_thumbnail"
             android:layout_width="fill_parent"
             android:layout_height="150dp"
-            android:scaleType="fitXY"/>
-        
+            android:scaleType="centerCrop" />
+
         <TextView
             android:id="@+id/tv_movie"
             android:layout_width="fill_parent"
             android:layout_height="50dp"
+            android:layout_gravity="bottom"
+            android:alpha="0.8"
+            android:background="#757575"
+            android:gravity="center_vertical"
             android:paddingLeft="@dimen/activity_horizontal_margin"
             android:paddingRight="@dimen/activity_horizontal_margin"
-            android:layout_gravity="bottom"
-            android:gravity="center_vertical"
-            android:background="#757575"
-            android:alpha="0.8"
-            android:textSize="@dimen/abc_text_size_headline_material"
-            android:text="Test"/>
+            android:text="Test"
+            android:textColor="@android:color/white"
+            android:textSize="@dimen/font_title" />
 
     </android.support.v7.widget.CardView>
 
-</LinearLayout>
+</FrameLayout>
