@@ -6,6 +6,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.LinearLayoutManager;
 import android.support.v7.widget.RecyclerView;
+import android.widget.Toast;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
@@ -18,7 +19,7 @@ import java.io.IOException;
 import java.util.List;
 
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity implements CardAdapter.Listener {
 
     RecyclerView mRecyclerView;
     RecyclerView.LayoutManager mLayoutManager;
@@ -35,11 +36,18 @@ public class MainActivity extends AppCompatActivity {
         mLayoutManager = new LinearLayoutManager(this);
         mRecyclerView.setLayoutManager(mLayoutManager);
 
-        mAdapter = new CardAdapter(null);
+        mAdapter = new CardAdapter(null, this);
         mRecyclerView.setAdapter(mAdapter);
 
         new LoadMoviesTask().execute();
 
+    }
+
+    @Override
+    public void onItemClicked(Movie movie) {
+        if (movie != null) {
+            Toast.makeText(this, "You just selected " + movie.name + "!", Toast.LENGTH_SHORT).show();
+        }
     }
 
     class LoadMoviesTask extends AsyncTask<Void, Void, List<Movie>> {
